@@ -8,6 +8,8 @@ def pascal_triangle(n):
     the Pascal's triangle of a given integer.
     '''
     triangle = []
+    if type(n) is not int or n <= 0:
+                return triangle
     for row in range(n):
         if row == 0:
             triangle.append([1])
